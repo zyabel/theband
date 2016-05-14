@@ -1,0 +1,22 @@
+.eqWrap {
+	margin: -1px 0 0 -2px;
+	overflow: hidden;
+	display:inline-block; 
+	//display:inline; 
+	//zoom:1;
+}
+.eqCol {
+	float: left;
+	margin: 0 0 0 2px;
+	width: 37px;
+}
+.eqItem {
+	background: #e7aa3b;
+	height: 10px;
+	margin: 1px 0 0 0;
+	opacity: 0;
+	width: 100%;
+}
+.eqCol .eqItem:last-child {
+	opacity: 1 !important;
+}
