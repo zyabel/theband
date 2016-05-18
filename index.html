@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, target-densityDPI=device-dpi"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>TheBand</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/liEqualizer.css">
+    <link rel="stylesheet/less" type="text/css" href="less/variables.less">
+    <link rel="stylesheet/less" type="text/css" href="less/style.less">  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jquery.liEqualizer.js"></script>
+    <script src="js/less.js" type="text/javascript"></script>  
+  </head>
+<body>
+  <div class="main-wrapper">
+    <div class="header-inner">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">HOME</a><br />
+              <div class="equalizer"></div>
+            </li>
+            <li>
+              <a href="#">ABOUT</a><br />
+              <div class="equalizer"></div>
+            </li>
+            <li>
+              <a href="#">MUSIC</a><br />
+              <div class="equalizer"></div>
+            </li>
+            <li>
+              <a href="#">TOURS</a><br />
+              <div class="equalizer"></div>
+            </li>
+            <li>
+              <a href="#">CONTACTS</a><br />
+              <div class="equalizer"></div>
+            </li>
+          </ul>
+        </nav>
+        <div class="h1-wrap">
+          <span>WE ARE</span>
+          <h1>THE BAND</h1>
+        </div>
+      </header>
+    </div>
+  </div>
+  <script>
+    $('.equalizer').liEqualizer({
+      row:6,       //кол-во столбцов
+      col:8,       //кол-во колонок
+      speed:20,    //скорость подсветки кубиков
+      freq:400,    //частота сигнала
+      on:true      //включено по умолчанию (true,false)
+    });
+  </script>  
+</body>
+</html>
+
+
+
