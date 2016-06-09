@@ -8,10 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/liEqualizer.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-slider.css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-    <script src="js/jquery-1.8.min.js"></script>
-    <script src="js/jquery.liEqualizer.js"></script>
   </head>
 <body>
   <div class="main-wrapper">
@@ -54,8 +53,88 @@
       </header>
       <!-- Header End -->
     </div>
+    <div class="band_slider-wrap">
+      <!-- Responsive slider - START -->    
+      <div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+        <div class="slides" data-group="slides">
+          <ul>
+            <li>
+              <div class="slide-body" data-group="slide">
+                 <div class="artist_slide-wrap">
+                    <figure>
+                      <img src="img/artist_photo.png" alt="Curt Sheard">
+                    </figure>
+                    <div class="artist_name-wrap">
+                      <span>CURT</span>
+                      <h2>SHEARD</h2>
+                    </div>
+                </div>
+                <div class="artist_text-wrap">
+                    <h3>Meet our band</h3>
+                    <p>Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo booth. Yr fixie plaid kogi.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-body" data-group="slide">
+                <div class="artist_slide-wrap">
+                    <figure>
+                      <img src="img/artist_photo.png" alt="Curt Sheard">
+                    </figure>
+                    <div class="artist_name-wrap">
+                      <span>CURT</span>
+                      <h2>SHEARD</h2>
+                    </div>
+                </div>
+                <div class="artist_text-wrap">
+                    <h3>Meet our band</h3>
+                    <p>Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't 
+                    heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, 
+                    affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo
+                    booth. Yr fixie plaid kogi.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide-body" data-group="slide">
+                <div class="artist_slide-wrap">
+                    <figure>
+                      <img src="img/artist_photo.png" alt="Curt Sheard">
+                    </figure>
+                    <div class="artist_name-wrap">
+                      <span>CURT</span>
+                      <h2>SHEARD</h2>
+                    </div>
+                </div>
+                <div class="artist_text-wrap">
+                    <h3>Meet our band</h3>
+                    <p>Court Sheard, swag iPhone neutra williamsburg, sriracha you probably haven't 
+                    heard of them PBR&B marfa seitan. Four dollar toast wayfarers helvetica etsy, 
+                    affogato pinterest schlitz. Squid yr mlkshk, pinterest pour-over polaroid photo
+                    booth. Yr fixie plaid kogi.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="slider-control left" href="#" data-jump="prev"></a>
+        <a class="slider-control right" href="#" data-jump="next"></a>
+        <div class="pages">
+          <a class="page" href="#" data-jump-to="1">curt sheard<span>0</span>bass</a>
+          <a class="page" href="#" data-jump-to="2">curt sheard<span>0</span>bass</a>
+          <a class="page" href="#" data-jump-to="3">curt sheard<span>0</span>bass</a>
+        </div>
+      </div>
+      <!-- Responsive slider - END -->
+    </div>
   </div>
-  <script>
+  
+  <script src="js/jquery-1.8.min.js"></script>
+  <script src="js/jquery.liEqualizer.js"></script>
+  <!--<script src="js/jquery.js"></script>-->
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/responsive-slider.js"></script>
+    <script>
     $('.equalizer').liEqualizer({
       row:6,       //кол-во столбцов
       col:8,       //кол-во колонок
@@ -63,7 +142,16 @@
       freq:400,    //частота сигнала
       on:true      //включено по умолчанию (true,false)
     });
-  </script>  
+  </script>
+  <script>
+  $( document ).ready( function() {
+    $('.responsive-slider').responsiveSlider({
+      autoplay: false,
+      interval: 5000,
+      transitionTime: 300
+    });
+  });
+  </script>
 </body>
 </html>
 

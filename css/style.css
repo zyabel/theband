@@ -3,8 +3,20 @@
   font-weight: 700;
   color: #241c18;
 }
+.lora-regular {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #241c18;
+}
 .oswald-light {
   font-family: 'Oswald', sans-serif;
+}
+.oswald-regular {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #241c18;
+  font-size: 24px;
 }
 .oswald-bold {
   font-family: 'Oswald', sans-serif;
