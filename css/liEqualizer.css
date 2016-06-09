@@ -3,7 +3,6 @@
 	width: 100%;
 }
 .eqWrap {
-	margin: -1px 0 0 -2px;
 	overflow: hidden;
 	float: left;
 	//display:inline-block; 
@@ -12,9 +11,9 @@
 	//zoom:1;
 }
 .eqCol {
-	float: left;
-	margin: 0 0 0 2px;
-	width: 5px;
+	float: right;
+	margin: 0 0 0 1px;
+	width: 4px;
 }
 .eqItem {
 	background: #cf0000;
