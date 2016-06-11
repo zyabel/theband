@@ -1,0 +1,181 @@
+/* HTML5 Audio player with playlist styles */
+.player {
+  //background: transparent url("../images/spr.png") no-repeat scroll center top;
+  height: 162px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.title, .artist {
+  font-family: verdana;
+  position: absolute;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.title {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  top: 23px;
+}
+.artist {
+  color: #EEEEEE;
+  font-size: 12px;
+  top: 40px;
+}
+/*playlist button*/
+/*.pl {
+  background: transparent url("../images/spr.png") no-repeat scroll -274px -175px;
+  cursor: pointer;
+  height: 34px;
+  left: 270px;
+  position: absolute;
+  top: 20px;
+  width: 32px;
+  display: none;
+}
+.pl:hover {
+  top: 21px;
+}*/
+/*Album cover*/
+/*.cover {
+  background: transparent url(../data/cover1.jpg) no-repeat scroll center top;
+  border-radius: 5px 5px 5px 5px;
+  height: 94px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  width: 94px;
+}*/
+.controls {
+  cursor: pointer;
+  height: 31px;
+  left: 167px;
+  position: absolute;
+  top: 65px;
+  width: 230px;
+}
+.controls .play, .controls .pause, .controls .rew, .controls .fwd {
+  background: transparent url("../img/player-sprites.png") no-repeat scroll 0 0;
+  float: left;
+  height: 31px;
+  width: 33%;
+}
+.controls .play {
+  background-position: -368px 0px;
+}
+.controls .pause {
+  background-position: -213px 0px;
+  display: none;
+}
+.controls .rew {
+  background-position: -106px -0px;
+}
+.controls .fwd {
+  background-position: -292px -0px;
+}
+/*Hover for controls buttons*/
+/*.controls .play:hover {
+  background-position: -8px -170px;
+}
+.controls .pause:hover {
+  background-position: -8px -197px;
+}
+.controls .rew:hover {
+  background-position: -54px -170px;
+}
+.controls .fwd:hover {
+  background-position: -100px -170px;
+}*/
+.hidden {
+  display: none;
+}
+.controls .visible {
+  display: block;
+}
+/*volume control block*/
+.volume {
+  display: none;
+  height: 11px;
+  left: 186px;
+  position: absolute;
+  top: 96px;
+  width: 112px;
+}
+/*tracker song background*/
+.tracker {
+  background: transparent url("../img/player-sprites.png") no-repeat scroll 0px -73px;
+  height: 6px;
+  left: 6px;
+  position: absolute;
+  top: 126px;
+  width: 100%;
+}
+/*tracker song background time color*/
+.ui-slider-range {
+  background: transparent url("../img/player-sprites.png") no-repeat scroll 0px -55px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.ui-slider-handle {
+  cursor: pointer;
+  height: 10px;
+  margin-left: -5px;
+  position: absolute;
+  top: 2px;
+  width: 10px;
+  z-index: 2;
+}
+/*.volume .ui-slider-handle {
+  background: url("../images/spr.png") no-repeat scroll -201px -188px rgba(0, 0, 0, 0);
+  height: 13px;
+  width: 13px;
+}*/
+/*tracker song marker*/
+.tracker .ui-slider-handle {
+  background: url("../img/player-sprites.png") no-repeat scroll -6px -96px rgba(0, 0, 0, 0);
+  height: 22px;
+  width: 22px;
+  top: -9px;
+}
+.playlist {
+  display: block;
+  list-style-type: none;
+  margin: -10px 0 0 2px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.playlist li {
+  color: #826b60;
+  cursor: pointer;
+  margin: 0 0 5px 1px;
+  padding-left: 15px;
+  position: relative;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+}
+.playlist li.active:before {
+  font-weight: bold;
+  color: red;
+  opacity: 1;
+}
+.playlist > li:before {
+  content: ' ';
+  opacity: 0.3;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 9px solid #826b60;
+  border-bottom: 6px solid transparent;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
