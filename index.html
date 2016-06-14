@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/liEqualizer.css">
     <link rel="stylesheet" type="text/css" href="css/responsive-slider.css">
     <link rel="stylesheet" type="text/css" href="css/player.css"/>
+    <link rel="stylesheet" type="text/css" href="css/concert-slider.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
   </head>
@@ -175,17 +176,45 @@
     <div class="band-music_wrap">
       <div class="band-music_inner">
         <div class="band-album_wrap">
-          <!-- Album Sell - START -->
-        
-          <!-- Album Sell - END -->
+            <!-- Album Sell - START -->
+            <figure>
+              <img src="img/album-cover.png" alt="album-cover"></figure>
+            <section>
+              <h3>Discography</h3>
+              <article>
+                <div class="album-name">Surprise Without Flaws</div>
+                <div class="album-year">2015</div>
+                <button class="listen">listen</button>
+                <button class="buy">buy</button>
+              </article>
+              <article>
+                <div class="album-name">Mists Of A Shadow</div>
+                <div class="album-year">2014</div>
+                <button class="listen">listen</button>
+                <button class="buy">buy</button>
+              </article>
+              <article>
+                <div class="album-name">Heroes Of The Sun</div>
+                <div class="album-year">2013</div>
+                <button class="listen">listen</button>
+                <button class="buy">buy</button>
+              </article>
+              <article>
+                <div class="album-name">Picure Of The Past</div>
+                <div class="album-year">2012</div>
+                <button class="listen">listen</button>
+                <button class="buy">buy</button>
+              </article>
+            </section>
+            <!-- Album Sell - END -->
         </div>
         <div class="band-player_wrap">    
           <!-- Band Player - START -->
           <div class="player">
           <div class="player-header">Now playing</div>
           <div class="pl"></div>
-          <div class="title"></div>
           <div class="artist"></div>
+          <div class="title"></div>          
           <div class="cover"></div>
           <div class="controls">
             <div class="rew"></div>
@@ -199,44 +228,86 @@
           <div class="playlist-header">Surprise Without Flaws</div>
           <ul class="playlist hidden">
             <li audiourl="01.mp3" cover="cover1.jpg" artist="Surprise Without Flaws">01. Clouds In The Forest 
-              <span class="dots">.......................</span>
               <span class="time">3:20</span>
+              <span class="dots">.......................</span> 
             </li>
             <li audiourl="02.mp3" cover="cover2.jpg" artist="Surprise Without Flaws">02. Rat In The River
-             <span class="dots">.......................</span>
-             <span class="time">2:48</span>
-           </li>
-            <li audiourl="03.mp3" cover="cover3.jpg" artist="Surprise Without Flaws">03. Giants And Companions
+              <span class="time">2:48</span>
               <span class="dots">.......................</span>
+            </li>
+            <li audiourl="03.mp3" cover="cover3.jpg" artist="Surprise Without Flaws">03. Giants And Companions
               <span class="time">2:27</span>
+              <span class="dots">.......................</span>
             </li>
             <li audiourl="04.mp3" cover="cover4.jpg" artist="Surprise Without Flaws">04. Ashamed Of Light
-              <span class="dots">.......................</span>
               <span class="time">3:30</span>
+              <span class="dots">.......................</span>
             </li>
             <li audiourl="05.mp3" cover="cover5.jpg" artist="Surprise Without Flaws">05. Doubting The Forest
-              <span class="dots">.......................</span>
               <span class="time">2:40</span>
+              <span class="dots">.......................</span>
             </li>
             <li audiourl="06.mp3" cover="cover6.jpg" artist="Surprise Without Flaws">06. Criminals Of The Lake
-              <span class="dots">.......................</span>
               <span class="time">2:55</span>
+              <span class="dots">.......................</span>
             </li>
             <li audiourl="07.mp3" cover="cover7.jpg" artist="Surprise Without Flaws">07. Curse Of Eternity
-              <span class="dots">.......................</span>
               <span class="time">1:33</span>
+              <span class="dots">.......................</span>
             </li>
             <li audiourl="06.mp3" cover="cover6.jpg" artist="Surprise Without Flaws">08. Fog In My Town
-              <span class="dots">.......................</span>
               <span class="time">1:33</span>
+              <span class="dots">.......................</span>
             </li>
             <li audiourl="07.mp3" cover="cover7.jpg" artist="Surprise Without Flaws">09. Serpent In The Mountains
-              <span class="dots">.......................</span>
               <span class="time">3:24</span>
+              <span class="dots">.......................</span>
             </li>
           </ul>
             <!-- Band Player - END -->
         </div>
+      </div>
+    </div>
+    <div class="band-concert_wrap">
+        <!--  Band concert slider START -->
+        <div class="responsive-slider-concert" data-spy="responsive-slider" data-autoplay="true">
+          <h2>Tours</h2>  
+          <div class="slides" data-group="slides">
+            <ul>
+              <li></li>
+              <li></li> 
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li> 
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <!-- Prev Next -->
+          <a class="slider-control left" href="#" data-jump="prev"></a>
+          <a class="slider-control right" href="#" data-jump="next"></a>
+          <!-- Artists names -->
+          <div class="pages">
+            <a class="page" href="#" data-jump-to="">Lawrie Alton<span></span></a>
+            <a class="page" href="#" data-jump-to="">Charles Timmy<span></span></a>
+            <a class="page" href="#" data-jump-to="">Curt Sheard<span></span></a>
+            <a class="page" href="#" data-jump-to="">Cade Ryker<span></span></a>
+            <a class="page" href="#" data-jump-to="">Tommie Brendan<span></span></a>
+            <a class="page new" href="#" data-jump-to="1">Lawrie Alton<span></span></a>
+            <a class="page new" href="#" data-jump-to="2">Charles Timmy<span></span></a>
+            <a class="page new" href="#" data-jump-to="3">Curt Sheard<span></span></a>
+            <a class="page new" href="#" data-jump-to="4">Cade Ryker<span></span></a>
+            <a class="page new" href="#" data-jump-to="5">Tommie Brendan<span></span></a>
+            <a class="page new" href="#" data-jump-to="6">Cade Ryker<span></span></a>
+            <a class="page new" href="#" data-jump-to="7">Tommie Brendan<span></span></a>
+          </div>
+        </div>
+        <!--  Band concert slider END -->
       </div>
     </div>
   </div>
@@ -252,7 +323,7 @@
   <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-    <script>
+  <script>
     $('.equalizer').liEqualizer({
       row:6,       //кол-во столбцов
       col:8,       //кол-во колонок
@@ -265,6 +336,15 @@
   $( document ).ready( function() {
     $('.responsive-slider').responsiveSlider({
       autoplay: true,
+      interval: 5000,
+      transitionTime: 300
+    });
+  });
+  </script>
+  <script>
+  $( document ).ready( function() {
+    $('.responsive-slider-concert').responsiveSlider({
+      autoplay: false,
       interval: 5000,
       transitionTime: 300
     });

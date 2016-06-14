@@ -1,3 +1,8 @@
+.center-position {
+  max-width: 1004px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .lora-bold {
   font-family: 'Lora', serif;
   font-weight: 700;
@@ -18,6 +23,9 @@
 }
 .oswald-light {
   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #241c18;
+  font-size: 20px;
 }
 .oswald-regular {
   font-family: 'Oswald', sans-serif;
@@ -25,10 +33,75 @@
   color: #241c18;
   font-size: 24px;
 }
+.oswald-regular_button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 .oswald-bold {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 67px;
+}
+@media (max-width: 980px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 55%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 760px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 560px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 440px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+  .common_media-band-player-album .album-name {
+    font-size: 16px;
+  }
+  .common_media-band-player-album .album-name:before {
+    top: 8px;
+    right: -12px;
+  }
+  .common_media-band-player-album .album-year {
+    padding-left: 36px;
+    font-size: 16px;
+  }
+  .common_media-band-player-album .listen,
+  .common_media-band-player-album .buy {
+    margin: 2px 2px 0 12px;
+  }
+  .common_media-band-player-album .tracker {
+    width: 90%;
+  }
+}
+@media (max-width: 370px) {
+  .common_media-band-player-album .dots {
+    display: none;
+  }
+  .common_media-band-player-album .controls {
+    left: 36px;
+  }
+  .common_media-band-player-album .tracker {
+    width: 90%;
+  }
 }
 .band_slider-wrap {
   background: #f2efed;
@@ -100,7 +173,7 @@
   }
   .band_slider-wrap .responsive-slider .slides ul li .slide-body .artist_slide-wrap .artist_name-wrap span {
     font-size: 35px;
-    margin-right: 60%;
+    margin-right: 42%;
   }
   .band_slider-wrap .responsive-slider .slides ul li .slide-body .artist_slide-wrap .artist_name-wrap h2 {
     font-size: 35px;

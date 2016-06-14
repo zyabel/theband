@@ -1,3 +1,8 @@
+.center-position {
+  max-width: 1004px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .lora-bold {
   font-family: 'Lora', serif;
   font-weight: 700;
@@ -18,6 +23,9 @@
 }
 .oswald-light {
   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #241c18;
+  font-size: 20px;
 }
 .oswald-regular {
   font-family: 'Oswald', sans-serif;
@@ -25,10 +33,75 @@
   color: #241c18;
   font-size: 24px;
 }
+.oswald-regular_button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 .oswald-bold {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 67px;
+}
+@media (max-width: 980px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 55%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 760px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 560px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 440px) {
+  .common_media-band-player-album {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+  .common_media-band-player-album .album-name {
+    font-size: 16px;
+  }
+  .common_media-band-player-album .album-name:before {
+    top: 8px;
+    right: -12px;
+  }
+  .common_media-band-player-album .album-year {
+    padding-left: 36px;
+    font-size: 16px;
+  }
+  .common_media-band-player-album .listen,
+  .common_media-band-player-album .buy {
+    margin: 2px 2px 0 12px;
+  }
+  .common_media-band-player-album .tracker {
+    width: 90%;
+  }
+}
+@media (max-width: 370px) {
+  .common_media-band-player-album .dots {
+    display: none;
+  }
+  .common_media-band-player-album .controls {
+    left: 36px;
+  }
+  .common_media-band-player-album .tracker {
+    width: 90%;
+  }
 }
 body {
   max-width: 1280px;
@@ -136,12 +209,228 @@ nav a:before {
   max-width: 1004px;
   margin: 0 auto;
   overflow: hidden;
+  overflow: visible;
 }
 .band-music_wrap .band-music_inner .band-album_wrap {
   float: left;
   width: 50%;
 }
+@media (max-width: 980px) {
+  .band-music_wrap .band-music_inner .band-album_wrap {
+    float: none;
+    width: 55%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 760px) {
+  .band-music_wrap .band-music_inner .band-album_wrap {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 560px) {
+  .band-music_wrap .band-music_inner .band-album_wrap {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 440px) {
+  .band-music_wrap .band-music_inner .band-album_wrap {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+  .band-music_wrap .band-music_inner .band-album_wrap .album-name {
+    font-size: 16px;
+  }
+  .band-music_wrap .band-music_inner .band-album_wrap .album-name:before {
+    top: 8px;
+    right: -12px;
+  }
+  .band-music_wrap .band-music_inner .band-album_wrap .album-year {
+    padding-left: 36px;
+    font-size: 16px;
+  }
+  .band-music_wrap .band-music_inner .band-album_wrap .listen,
+  .band-music_wrap .band-music_inner .band-album_wrap .buy {
+    margin: 2px 2px 0 12px;
+  }
+  .band-music_wrap .band-music_inner .band-album_wrap .tracker {
+    width: 90%;
+  }
+}
+@media (max-width: 370px) {
+  .band-music_wrap .band-music_inner .band-album_wrap .dots {
+    display: none;
+  }
+  .band-music_wrap .band-music_inner .band-album_wrap .controls {
+    left: 36px;
+  }
+  .band-music_wrap .band-music_inner .band-album_wrap .tracker {
+    width: 90%;
+  }
+}
 .band-music_wrap .band-music_inner .band-player_wrap {
   float: left;
-  width: 50%;
+  width: 42.5%;
+  padding-left: 73px;
+}
+@media (max-width: 980px) {
+  .band-music_wrap .band-music_inner .band-player_wrap {
+    float: none;
+    width: 55%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 760px) {
+  .band-music_wrap .band-music_inner .band-player_wrap {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 560px) {
+  .band-music_wrap .band-music_inner .band-player_wrap {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 440px) {
+  .band-music_wrap .band-music_inner .band-player_wrap {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+  .band-music_wrap .band-music_inner .band-player_wrap .album-name {
+    font-size: 16px;
+  }
+  .band-music_wrap .band-music_inner .band-player_wrap .album-name:before {
+    top: 8px;
+    right: -12px;
+  }
+  .band-music_wrap .band-music_inner .band-player_wrap .album-year {
+    padding-left: 36px;
+    font-size: 16px;
+  }
+  .band-music_wrap .band-music_inner .band-player_wrap .listen,
+  .band-music_wrap .band-music_inner .band-player_wrap .buy {
+    margin: 2px 2px 0 12px;
+  }
+  .band-music_wrap .band-music_inner .band-player_wrap .tracker {
+    width: 90%;
+  }
+}
+@media (max-width: 370px) {
+  .band-music_wrap .band-music_inner .band-player_wrap .dots {
+    display: none;
+  }
+  .band-music_wrap .band-music_inner .band-player_wrap .controls {
+    left: 36px;
+  }
+  .band-music_wrap .band-music_inner .band-player_wrap .tracker {
+    width: 90%;
+  }
+}
+.band-album_wrap figure img {
+  margin: 65px -58px -37px;
+}
+@media (max-width: 560px) {
+  .band-album_wrap figure img {
+    width: 77%;
+    margin: 25px 0 -28px;
+  }
+}
+.band-album_wrap section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 68px;
+  margin-left: -1px;
+}
+.band-album_wrap section h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #241c18;
+  font-size: 24px;
+  padding-bottom: 25px;
+}
+.band-album_wrap section article {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #241c18;
+  font-size: 20px;
+  padding: 0px 0px 17px 1px;
+}
+.band-album_wrap section article div,
+.band-album_wrap section article button {
+  float: left;
+}
+.band-album_wrap section article .album-name {
+  width: 35%;
+  position: relative;
+}
+.band-album_wrap section article .album-name:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: -21px;
+  background: #e4dddb;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.band-album_wrap section article .album-year {
+  padding-left: 47px;
+}
+.band-album_wrap section article button {
+  cursor: pointer;
+  width: 54px;
+  height: 25px;
+  margin: 2px -25px 0 45px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  color: #826b60;
+  background: #e4dddb;
+}
+.band-album_wrap section article .listen:hover {
+  color: #f8f8f8;
+  background: #826b60;
+}
+.band-album_wrap section article .buy {
+  color: #f8f8f8;
+  background: #826b60;
+}
+.band-album_wrap section article .buy:hover {
+  color: #826b60;
+  background: #e4dddb;
 }

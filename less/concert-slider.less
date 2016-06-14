@@ -1,0 +1,122 @@
+@import url('variables.less');
+
+.band-concert_wrap {
+  background: #f1eeed;
+  width: 100%;
+  overflow: hidden;
+
+  .responsive-slider-concert {
+    max-width: 1004px;
+    margin: 0 auto;
+    position: relative;
+
+    [data-animate] {
+      opacity: 1;
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+    
+    .slides {
+      position: relative;
+      overflow: hidden;
+      height: 200px;
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+
+        li {
+          display: inline-block;
+          height: 100%;
+        }
+      }
+    }
+
+    .slider-control {
+      position: absolute;
+      top: 40%;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 31px 17px;
+      
+      
+      &.left {
+        left: 0;
+        top: 45%;
+        background: url(../img/band_slider-arow.png) 0 0 no-repeat;
+        
+        &:hover {
+          text-decoration: none;
+          opacity: 0.5;
+        }
+      }
+      
+      &.right {
+        right: 0;
+        top: 45%;
+        background: url(../img/band_slider-arow.png) 0 0 no-repeat;
+        transform: scaleX(-1);
+        
+        
+        &:hover {
+          text-decoration: none;
+           opacity: 0.5;
+        }
+      }
+
+      @media (max-width: 480px) {
+        &.left, &.right {
+          display: none;
+        }
+      }
+    }
+    
+    .pages {
+      position: absolute;
+      top: 29%;
+      right: 11.5%;
+      text-align: center;
+      width: 30%;
+      border-right: 1px solid #e7e0df;
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+
+      .page {
+        display: block;
+        text-align: right;
+        opacity: 0.3;
+        margin-right: -16px;
+        margin-bottom: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 9px;
+        .lora-bold;
+         
+        span {
+          padding: 0 5px;
+          border-radius: 50%;
+          background: #826b60;
+          margin: 0 10px;
+        }
+
+        &.active span {
+          background: #000;
+        }
+      }
+
+      .page.new {
+        opacity: 1;
+        color: #826b60;
+      
+        &.active {
+          opacity: 1;
+          color: #000;
+        }
+      }
+    }
+  }
+}

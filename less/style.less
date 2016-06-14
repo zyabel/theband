@@ -14,9 +14,7 @@ body {
 }
 
 header {
-  max-width: 1004px;
-  margin: 0 auto;
-  overflow: hidden;
+  .center-position;
 }
 
 nav {
@@ -117,18 +115,125 @@ nav {
   width: 100%;
 
   .band-music_inner {
-    max-width: 1004px;
-    margin: 0 auto;
-    overflow: hidden;
+    .center-position;
+    overflow: visible;
 
     .band-album_wrap {
       float: left;
       width: 50%;
+
+      .common_media-band-player-album;
     }
 
     .band-player_wrap {
       float: left;
-      width: 50%;
+      width: 42.5%;
+      padding-left: 73px;
+
+      .common_media-band-player-album;
+    }
+  }
+}
+.band-album_wrap {
+  figure {
+    img {
+      margin: 65px -58px -37px;
+
+      @media (max-width: 560px) {
+        width: 77%;
+        margin: 25px 0 -28px;
+      }
+    }
+  }
+
+  section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    padding-top: 68px;
+    margin-left: -1px;
+    
+    h3 {
+      .oswald-regular;
+      padding-bottom: 25px;
+    }
+
+    article {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+   
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+
+      overflow: hidden;
+      .oswald-light;
+      padding: 0px 0px 17px 1px;
+
+      div,
+      button {
+        float: left;
+      }
+
+      .album-name {
+        width: 35%;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 12px;
+          right: -21px;
+          background: #e4dddb;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+      }
+
+      .album-year {
+        padding-left: 47px;
+      }
+      button {
+        cursor: pointer;
+        width: 54px;
+        height: 25px;
+        margin: 2px -25px 0 45px;
+        .oswald-regular_button;
+        border: none;
+        color: @active-text-color;
+        background: #e4dddb;
+      }
+
+      .listen:hover {
+        color: #f8f8f8;
+        background: @active-text-color;
+      }
+
+      .buy {
+        color: #f8f8f8;
+        background: @active-text-color;
+
+        &:hover {
+          color: @active-text-color;
+          background: #e4dddb;
+        }
+      }
     }
   }
 }

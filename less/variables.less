@@ -1,6 +1,12 @@
 @text-color: #241c18;
 @active-text-color: #826b60;
 
+.center-position {
+  max-width: 1004px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .lora-bold {
   font-family: 'Lora', serif;
   font-weight: 700;
@@ -23,6 +29,9 @@
 }
 .oswald-light {
   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: @text-color;
+  font-size: 20px;
 }
 
 .oswald-regular {
@@ -32,8 +41,78 @@
   font-size: 24px;
 }
 
+.oswald-regular_button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .oswald-bold {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 67px;
+}
+
+.common_media-band-player-album {
+  @media (max-width: 980px) {
+    float: none;
+    width: 55%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @media (max-width: 760px) {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (max-width: 560px) {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+  }
+
+  @media (max-width: 440px) {
+    float: none;
+    width: 98%;
+    padding: 0 5px;
+
+    .album-name {
+      font-size: 16px;
+
+      &:before {
+        top: 8px;
+        right: -12px;
+      }
+    }
+
+    .album-year {
+      padding-left: 36px;
+      font-size: 16px;
+    }
+
+    .listen,
+    .buy {
+      margin: 2px 2px 0 12px;
+    }
+    .tracker {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .dots {
+      display: none;
+    }
+
+    .controls {
+      left: 36px;
+    }
+
+    .tracker {
+      width: 90%;
+    }
+  }
 }
