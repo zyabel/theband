@@ -103,6 +103,44 @@
     width: 90%;
   }
 }
+@media (max-width: 973px) {
+  .concert-slider-controls.left {
+    left: 13.5%;
+  }
+  .concert-slider-controls.right {
+    right: 13.5%;
+  }
+}
+@media (max-width: 846px) {
+  .concert-slider-controls.left {
+    left: 10.5%;
+  }
+  .concert-slider-controls.right {
+    right: 10.5%;
+  }
+}
+@media (max-width: 750px) {
+  .concert-slider-controls.left {
+    left: 5.5%;
+  }
+  .concert-slider-controls.right {
+    right: 5.5%;
+  }
+}
+@media (max-width: 680px) {
+  .concert-slider-controls.left {
+    left: 0;
+  }
+  .concert-slider-controls.right {
+    right: 0;
+  }
+}
+@media (max-width: 648px) {
+  .concert-slider-controls.left,
+  .concert-slider-controls.right {
+    display: none;
+  }
+}
 body {
   max-width: 1280px;
 }
@@ -214,6 +252,7 @@ nav a:before {
 .band-music_wrap .band-music_inner .band-album_wrap {
   float: left;
   width: 50%;
+  padding-bottom: 6.5%;
 }
 @media (max-width: 980px) {
   .band-music_wrap .band-music_inner .band-album_wrap {
@@ -278,6 +317,7 @@ nav a:before {
   float: left;
   width: 42.5%;
   padding-left: 73px;
+  padding-bottom: 6.5%;
 }
 @media (max-width: 980px) {
   .band-music_wrap .band-music_inner .band-player_wrap {

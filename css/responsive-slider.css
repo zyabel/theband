@@ -103,6 +103,44 @@
     width: 90%;
   }
 }
+@media (max-width: 973px) {
+  .concert-slider-controls.left {
+    left: 13.5%;
+  }
+  .concert-slider-controls.right {
+    right: 13.5%;
+  }
+}
+@media (max-width: 846px) {
+  .concert-slider-controls.left {
+    left: 10.5%;
+  }
+  .concert-slider-controls.right {
+    right: 10.5%;
+  }
+}
+@media (max-width: 750px) {
+  .concert-slider-controls.left {
+    left: 5.5%;
+  }
+  .concert-slider-controls.right {
+    right: 5.5%;
+  }
+}
+@media (max-width: 680px) {
+  .concert-slider-controls.left {
+    left: 0;
+  }
+  .concert-slider-controls.right {
+    right: 0;
+  }
+}
+@media (max-width: 648px) {
+  .concert-slider-controls.left,
+  .concert-slider-controls.right {
+    display: none;
+  }
+}
 .band_slider-wrap {
   background: #f2efed;
   width: 100%;
