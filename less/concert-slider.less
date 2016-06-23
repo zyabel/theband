@@ -19,6 +19,7 @@
       font-size: 25px;
       text-align: center;
       margin-top: 49px;
+      margin-left: 18px;
     }
     
     .slides {
@@ -134,63 +135,100 @@
     }
   }
   /*******************************************************/
-section {
-    /*position: absolute;
-    top: 20px;
-    left: 20px;
-    bottom: 20px;
-    right: 20px;*/
+  .concert-calendar_wrap {
+    max-width: 1004px;
     margin: 0 auto; 
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 70px;
-    width: 50%;
-}
+    overflow: hidden;
+    padding-top: 114px;
+  
+    section {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 85%;
+      margin-left: 11.5%;
+      height: 185px;
+   
+      /* Let's get this party started */
+      &::-webkit-scrollbar {
+          width: 10px;
+      }
+       
+      /* Track */
+      &::-webkit-scrollbar-track {
+          //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+          -webkit-border-radius: 0px;
+          border-radius: 0px;
+          background: rgba(234,229,227,1); 
+      }
+       
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+          -webkit-border-radius: 0px;
+          border-radius: 0px;
+          background: rgba(203,194,189,1); 
+          //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+      }
+      &::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(234,229,227,1); 
+      }
 
-/* Let's get this party started */
-::-webkit-scrollbar {
-    width: 10px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track {
-    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background: rgba(234,229,227,1); 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background: rgba(203,194,189,1); 
-    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(234,229,227,1); 
-}
-/********************* for firefox******************************/
-@-moz-document url-prefix(http://),url-prefix(https://) {
-    scrollbar {
-       -moz-appearance: none !important;
-       background: rgb(0,255,0) !important;
-    }
-    thumb,scrollbarbutton {
-       -moz-appearance: none !important;
-       background-color: rgb(0,0,255) !important;
-    }
+      article {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
 
-    thumb:hover,scrollbarbutton:hover {
-       -moz-appearance: none !important;
-       background-color: rgb(255,0,0) !important;
+        height: 70px;
+
+        .concert-date {
+          width: 90px;
+          .oswald-bold;
+          font-size: 33px;
+          overflow: hidden;
+
+          span {
+            width: 55%;
+            display: block;
+            float: right;
+            .oswald-bold;
+            font-size: 15px;
+            margin: 4px 0 0 0;
+            line-height: 19px;
+          }
+        }
+
+        .concert-place {
+          .flex-grow;
+          width: 65%;
+          .oswald-light ;
+        }
+
+        button {
+          cursor: pointer;
+          height: 25px;
+          margin: 0 5px 0 0;
+          width: 80px;
+          .oswald-regular_button;
+          border: none;
+          color: @active-text-color;
+          background: #e4dddb;
+        }
+
+       .buy.ticket {
+          color: #f8f8f8;
+          background: @active-text-color;
+
+          &:hover {
+            color: @active-text-color;
+            background: #e4dddb;
+          }
+        }
+      }
     }
-    scrollbarbutton {
-       display: none !important;
-    }
-    scrollbar[orient="vertical"] {
-      min-width: 10px !important;
-    }
-}
-  /********************************************************/
+  }
 }

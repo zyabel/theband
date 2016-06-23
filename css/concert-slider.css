@@ -44,6 +44,12 @@
   font-weight: 700;
   font-size: 67px;
 }
+.flex-grow {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
 @media (max-width: 980px) {
   .common_media-band-player-album {
     float: none;
@@ -146,11 +152,6 @@
   width: 100%;
   overflow: hidden;
   /*******************************************************/
-  /* Let's get this party started */
-  /* Track */
-  /* Handle */
-  /********************* for firefox******************************/
-  /********************************************************/
 }
 .band-concert_wrap .responsive-slider-concert {
   max-width: 1004px;
@@ -168,6 +169,7 @@
   font-size: 25px;
   text-align: center;
   margin-top: 49px;
+  margin-left: 18px;
 }
 .band-concert_wrap .responsive-slider-concert .slides {
   position: relative;
@@ -344,51 +346,93 @@
   color: #000;
   margin: 28px -16px 26px 0;
 }
-.band-concert_wrap section {
-  /*position: absolute;
-    top: 20px;
-    left: 20px;
-    bottom: 20px;
-    right: 20px;*/
+.band-concert_wrap .concert-calendar_wrap {
+  max-width: 1004px;
   margin: 0 auto;
+  overflow: hidden;
+  padding-top: 114px;
+}
+.band-concert_wrap .concert-calendar_wrap section {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 70px;
-  width: 50%;
+  width: 85%;
+  margin-left: 11.5%;
+  height: 185px;
+  /* Let's get this party started */
+  /* Track */
+  /* Handle */
 }
-.band-concert_wrap ::-webkit-scrollbar {
+.band-concert_wrap .concert-calendar_wrap section::-webkit-scrollbar {
   width: 10px;
 }
-.band-concert_wrap ::-webkit-scrollbar-track {
+.band-concert_wrap .concert-calendar_wrap section::-webkit-scrollbar-track {
   border-radius: 0px;
   background: #eae5e3;
 }
-.band-concert_wrap ::-webkit-scrollbar-thumb {
+.band-concert_wrap .concert-calendar_wrap section::-webkit-scrollbar-thumb {
   border-radius: 0px;
   background: #cbc2bd;
 }
-.band-concert_wrap ::-webkit-scrollbar-thumb:window-inactive {
+.band-concert_wrap .concert-calendar_wrap section::-webkit-scrollbar-thumb:window-inactive {
   background: #eae5e3;
 }
-@-moz-document url-prefix(http://),url-prefix(https://) {
-  .band-concert_wrap scrollbar {
-    -moz-appearance: none !important;
-    background: #00ff00 !important;
-  }
-  .band-concert_wrap thumb,
-  .band-concert_wrap scrollbarbutton {
-    -moz-appearance: none !important;
-    background-color: #0000ff !important;
-  }
-  .band-concert_wrap thumb:hover,
-  .band-concert_wrap scrollbarbutton:hover {
-    -moz-appearance: none !important;
-    background-color: #ff0000 !important;
-  }
-  .band-concert_wrap scrollbarbutton {
-    display: none !important;
-  }
-  .band-concert_wrap scrollbar[orient="vertical"] {
-    min-width: 10px !important;
-  }
+.band-concert_wrap .concert-calendar_wrap section article {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 70px;
+}
+.band-concert_wrap .concert-calendar_wrap section article .concert-date {
+  width: 90px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 67px;
+  font-size: 33px;
+  overflow: hidden;
+}
+.band-concert_wrap .concert-calendar_wrap section article .concert-date span {
+  width: 55%;
+  display: block;
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 67px;
+  font-size: 15px;
+  margin: 4px 0 0 0;
+  line-height: 19px;
+}
+.band-concert_wrap .concert-calendar_wrap section article .concert-place {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 65%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #241c18;
+  font-size: 20px;
+}
+.band-concert_wrap .concert-calendar_wrap section article button {
+  cursor: pointer;
+  height: 25px;
+  margin: 0 5px 0 0;
+  width: 80px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  color: #826b60;
+  background: #e4dddb;
+}
+.band-concert_wrap .concert-calendar_wrap section article .buy.ticket {
+  color: #f8f8f8;
+  background: #826b60;
+}
+.band-concert_wrap .concert-calendar_wrap section article .buy.ticket:hover {
+  color: #826b60;
+  background: #e4dddb;
 }
