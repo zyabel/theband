@@ -39,6 +39,10 @@
           height: 100%;
         }
       }
+
+      @media (max-width: 600px) {
+        height: 20px;
+      }
     }
 
     .slider-control {
@@ -120,7 +124,7 @@
 
         &.active span {
           background: #000;
-        }
+        }right: 24.8%;
       }
 
       .page.new {
@@ -132,6 +136,14 @@
           color: #000;
           margin: 28px -16px 26px 0;
         }
+      }
+
+      @media (max-width: 880px) {
+          right: 24.8%;
+      }
+
+      @media (max-width: 600px) {
+        display: none;
       }
     }
   }
@@ -147,7 +159,7 @@
       overflow-y: scroll;
       overflow-x: hidden;
       width: 85%;
-      margin-left: 11.5%;
+      margin: 0 0 6.7% 11.5%;
       height: 185px;
    
       /* Let's get this party started */
@@ -174,6 +186,17 @@
         background: rgba(234,229,227,1); 
       }
 
+      @media (max-width: 580px) {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        overflow: hidden;
+
+        article:last-child {
+          background: none;
+        }
+      }
+
       article {
         display: -webkit-box;
         display: -webkit-flex;
@@ -184,14 +207,17 @@
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
-
-        height: 70px;
+        width: 94.5%;
+        height: 58px;
+        background: url(../img/article_bg.png) 0 100% repeat-x;
+        margin-bottom: 11px;
 
         .concert-date {
           width: 90px;
           .oswald-bold;
           font-size: 33px;
           overflow: hidden;
+          padding-left: 20px;
 
           span {
             width: 55%;
@@ -202,23 +228,42 @@
             margin: 4px 0 0 0;
             line-height: 19px;
           }
+
+          @media (max-width: 434px) {
+            font-size: 23px;
+            margin-top: 9px;
+
+            span {
+              font-size: 13px;
+              margin: 0;
+            }
+          }
         }
 
         .concert-place {
           .flex-grow;
           width: 65%;
           .oswald-light ;
+          padding: 6px 0 0 5px;
+
+          @media (max-width: 434px) {
+            font-size: 15px;
+          }
         }
 
         button {
           cursor: pointer;
           height: 25px;
-          margin: 0 5px 0 0;
+          margin: 10px 30px 0 0;
           width: 80px;
           .oswald-regular_button;
           border: none;
           color: @active-text-color;
           background: #e4dddb;
+
+          @media (max-width: 580px) {
+            font-size: 9px;
+          }
         }
 
        .buy.ticket {
@@ -230,7 +275,19 @@
             background: #e4dddb;
           }
         }
+
+      @media (max-width: 580px) {
+          width: 100%;
+        }
       }
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      overflow: hidden;
     }
   }
 }

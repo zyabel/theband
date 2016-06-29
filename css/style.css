@@ -487,3 +487,148 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
+footer .footer-inner {
+  max-width: 1004px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 8%;
+}
+footer .footer-inner span {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 67px;
+  font-size: 54px;
+  padding-left: 18px;
+  letter-spacing: 3px;
+}
+@media (max-width: 470px) {
+  footer .footer-inner span {
+    font-size: 34px;
+  }
+}
+footer .footer-inner h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 67px;
+  font-size: 48.5px;
+  color: #e4dddb;
+  margin: -13px 0 0 19px;
+  letter-spacing: 2.5px;
+}
+@media (max-width: 470px) {
+  footer .footer-inner h2 {
+    font-size: 25px;
+  }
+}
+footer .footer-inner form {
+  overflow: hidden;
+  margin: 3.5% 0 26.2% 26.5%;
+  padding-top: 6px;
+}
+footer .footer-inner form label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 67px;
+  font-size: 24px;
+  color: #e4dddb;
+  background: #241c18;
+  text-transform: uppercase;
+  padding: 0px 23px;
+  float: left;
+}
+@media (max-width: 560px) {
+  footer .footer-inner form label {
+    display: none;
+  }
+}
+footer .footer-inner form button {
+  display: none;
+}
+footer .footer-inner form button:hover {
+  color: #826b60;
+  background: #e4dddb;
+}
+@media (max-width: 560px) {
+  footer .footer-inner form button {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 67px;
+    font-size: 24px;
+    color: #e4dddb;
+    background: #241c18;
+    text-transform: uppercase;
+    padding: 0px 23px;
+    float: left;
+    border: none;
+    margin-right: 5px;
+  }
+}
+footer .footer-inner form input {
+  float: left;
+  margin-right: 5.5%;
+  border: 4px solid #241c18;
+  height: 28px;
+  width: 25.5%;
+  background: transparent;
+  padding: 0 0 0 8px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+  color: #241c18;
+  font-size: 17px;
+}
+@media (max-width: 560px) {
+  footer .footer-inner form input {
+    display: none;
+  }
+}
+footer .footer-inner form a {
+  float: left;
+  margin: -4px 3% 0 0;
+}
+footer .footer-inner form a:hover {
+  transform: scale(0.7, 0.7);
+  transform: rotate(180deg);
+}
+@media (max-width: 560px) {
+  footer .footer-inner form {
+    margin-left: 14%;
+    margin: 3.5% 0 10.2% 26.5%;
+  }
+}
+footer .footer-inner p {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  color: #241c18;
+  font-size: 12px;
+  float: left;
+  color: #e4dddb;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+footer .footer-inner .footer-nav-wrap {
+  float: right;
+  margin: -50px 3px 30px 0;
+}
+footer .footer-inner .footer-nav-wrap .footer-navigation {
+  padding: 0;
+}
+footer .footer-inner .footer-nav-wrap .footer-navigation a {
+  color: #e4dddb;
+}
+footer .footer-inner .footer-nav-wrap .footer-navigation a:before {
+  top: 21%;
+  left: 96%;
+}
+footer .footer-inner .footer-nav-wrap .footer-navigation .equalizer.footer {
+  margin: 0 0 0 10px;
+}
+@media (max-width: 560px) {
+  footer .footer-inner .footer-nav-wrap {
+    float: none;
+    margin: -36px 0 15px 0;
+  }
+}
